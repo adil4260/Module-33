@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title and logo  -->
+    <title>English Janala | Berst Platform for learning English</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font integration  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- tailwind+daisyui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+    <!-- --------------------------------------------- -->
+    <!-- Navber -->
+    <div class="navbar bg-blue-50 shadow-sm justify-center lg:justify-between">
+
+        <div class="navbar-start lg:justify-start justify-center ">
+            <a href="" class="flex items-center gap-1"><span class="text-lg font-bold">English</span>
+                <img src="assets/logo.png" alt="" srcset="">
+                <span class="font-bangla text-lg font-semibold">জানালা</span> </a>
+        </div>
+
+        <div class=" navbar-end navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 space-x-4  hidden lg:flex">
+                <li>
+                    <a class="btn btn-outline btn-primary" href=""><i class="fa-solid fa-circle-question"></i> FAQ</a>
+                </li>
+                <li>
+                    <a class="btn btn-outline btn-primary" href=""><i class="fa-solid fa-book-open"></i>
+                        Learn</a>
+                </li>
+                <li>
+                    <a class="btn btn-outline btn-primary" href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------- -->
+    <section class="flex flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto">
+        <div class="content flex-1 text-center md:text-left">
+            <h2 class="text-4xl font-bold mb-8">
+                <span class="text-sky-400">English</span> is Easy!!
+            </h2>
+            <p class="font-bangla mb-6">
+                আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
+                Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+            </p>
+
+            <!-- ইনপুট ফিল্ড এবং বাটন যুক্ত করুন -->
+            <form class="flex flex-col gap-3 max-w-xs mx-auto md:mx-0 text-center md:text-left">
+                <input type="text" placeholder="Enter Your Name"
+                    class="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-sky-400" />
+                <input type="password" placeholder="••••••••"
+                    class="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-sky-400" />
+                <button type="submit"
+                    class="bg-indigo-600 text-white py-2 px-4 rounded text-sm font-semibold hover:bg-indigo-700 w-fit mx-auto md:mx-0">
+                    Get Started
+                </button>
+            </form>
+        </div>
+
+        <div class="image flex-1 bg-white">
+            <img class="bg-white full   " src="assets/ChatGPT Image Sep 15, 2026, 12_17_42 AM.png" alt="Hero Student" />
+        </div>
+    </section>
+
+    <!-- ---------------------------------- -->
+    <section>
+        <h2 class="text-4xl font-bold mb-8 text-center">
+            <span class="text-sky-400 ">Let's</span> Learn Vocabulary
+        </h2>
+        <div id="level-conttainer"></div>
+    </section>
+
+    <script src="script/try.js"></script>
+
+</body>
+
+</html>
