@@ -89,13 +89,25 @@
     <!-- ---------------------------------- -->
     <section>
         <h2 class="text-4xl font-bold mb-8 text-center">
-            <span class="text-sky-400 ">Let's</span> Learn Vocabulary
+            <span class="text-sky-400">Let's</span> Learn Vocabulary
         </h2>
-        <div id="level-conttainer" class="flex gap-5 justify-center flex-wrap "></div>
+
+        <!-- Lesson Buttons -->
+        <div id="level-conttainer" class="flex gap-5 justify-center flex-wrap"></div>
+
+        <!-- Search Bar -->
+        <div class="flex justify-center my-10">
+            <input id="input-search" type="text" placeholder="Search Vocabulary Now"
+                class="border border-gray-300 px-4 py-3 rounded-l-lg outline-none w-65">
+
+            <button id="btn-search" class="bg-indigo-700 text-white px-6 py-3 rounded-r-lg font-bold">
+                Search
+            </button>
+        </div>
     </section>
 
-    <!-- ------------------------------ -->
-    <section id="word-container" class="bg-gray-100 p-5 mx-auto my-10  grid grid-cols-3 ">
+    <!--------------------------------------------------------------------------------->
+    <section id="word-container" class="bg-gray-100 p-5 mx-auto my-10 grid grid-cols-1 md:grid-cols-3 gap-5">
 
         <div class="text-center  col-span-full rounded-xl py-5 space-y-6 font-bangla">
             <p class="text-lg font-medium text-gray-400">
@@ -104,6 +116,19 @@
             <h2 class="font-bold text-2xl">একটি Lesson Select করুন।</h2>
         </div>
     </section>
+
+    <!-- --------------------------- -->
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="details-container" class="space-y-5"></div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
     <script src="script/try.js"></script>
 
 </body>
